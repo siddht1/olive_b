@@ -67,10 +67,10 @@ export default function Header() {
                 </span>
                 <a
                   class="ml-2 <sm:hidden"
-                  href="https://github.com/"
+                  href=""
                 >
                   <img
-                    alt="GitHub forks badge"
+                    alt=""
                     src=""
                   />
                 </a>
@@ -79,7 +79,7 @@ export default function Header() {
                   href=""
                 >
                   <img
-                    alt="GitHub forks badge"
+                    alt=""
                     src=""
                   />
                 </a>
