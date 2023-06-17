@@ -33,3 +33,7 @@ export interface Option {
   positions?: Set<number>
   extra?: any
 }
+export interface user_info
+  {
+    info:any
+  }
