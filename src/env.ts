@@ -34,7 +34,7 @@ export const defaultEnv = {
   SEND_KEY: "",
   SEND_CHANNEL: 9,
   NO_GFW: false,
-  user_info:req.headers
+  user_info:headers
 }
 
 export type SessionSettings = typeof defaultEnv.CLIENT_SESSION_SETTINGS
