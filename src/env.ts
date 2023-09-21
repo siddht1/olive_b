@@ -18,7 +18,7 @@ export const defaultEnv = {
     continuousDialogue: true,
     APIModel: "gpt-3.5-turbo" as Model
   },
-  CLIENT_DEFAULT_MESSAGE: `Powered by OpenAI Vercel
+  CLIENT_DEFAULT_MESSAGE: `Powered by KIVTECHS
 - Multiple conversations are now supported, open the conversation settings and click New conversation. Enter [[/]][[/]] or [[space]][[space]] in the input box to switch dialogues and search for historical messages.
 - [[Shift]] + [[Enter]] Newline. Type [[/]] or [[space]] at the beginning to search for Prompt presets. [[↑]] Can edit the last question. Click the top name to scroll to the top, and click the input box to scroll to the bottom.
 `,
@@ -27,7 +27,7 @@ export const defaultEnv = {
     "gpt-4": 8 * 1024,
     "gpt-4-32k": 32 * 1024
   } as Record<Model, number>,
-  OPENAI_API_BASE_URL: "api.openai.com",
+  OPENAI_API_BASE_URL: "https://kivtechs.openai.azure.com/",
   OPENAI_API_KEY: "",
   TIMEOUT: 30000,
   PASSWORD: "",
