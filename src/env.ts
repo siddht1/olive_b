@@ -27,7 +27,8 @@ export const defaultEnv = {
     "gpt-4": 8 * 1024,
     "gpt-4-32k": 32 * 1024
   } as Record<Model, number>,
-  OPENAI_API_BASE_URL: "https://kivtechs.openai.azure.com/",
+  //  put back the base end-point 
+  OPENAI_API_BASE_URL: "api.openai.com",
   OPENAI_API_KEY: "",
   TIMEOUT: 30000,
   PASSWORD: "",
