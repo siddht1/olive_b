@@ -7,11 +7,7 @@ import type { APIEvent } from "solid-start/api"
 
 export const config = {
   runtime: "edge",
-  /**
-   * https://vercel.com/docs/concepts/edge-network/regions#region-list
-   * disable hongkong
-   * only for vercel
-   */
+
   regions: [
     "arn1",
     "bom1",
@@ -185,13 +181,16 @@ export async function fetchBilling(key: string): Promise<Billing> {
     const now = new Date()
     const startDate = new Date(now.getTime() - 90 * 24 * 60 * 60 * 1000)
     const endDate = new Date(now.getTime() + 24 * 60 * 60 * 1000)
-
+    //  custom API url 
   
     const urlSubscription =
-      "https://api.openai.com/v1/dashboard/billing/subscription" // 查是否订阅
-    const urlUsage = `https://api.openai.com/v1/dashboard/billing/usage?start_date=${formatDate(
+      "https://node-app-nine.vercel.app/v1/dashboard/billing/subscription"
+    // Check whether to subscribe
+    const urlUsage = `https://node-app-nine.vercel.app/v1/dashboard/billing/usage?start_date=${formatDate(
       startDate
-    )}&end_date=${formatDate(endDate)}` // 查使用量
+    )}&end_date=${formatDate(endDate)}`
+    
+    //Check usage
     const headers = {
       Authorization: "Bearer " + key,
       "Content-Type": "application/json"
