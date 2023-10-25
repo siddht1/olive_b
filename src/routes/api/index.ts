@@ -56,6 +56,7 @@ export async function POST({ request }: APIEvent) {
       model: Model
     } = await request.json()
     const { messages, key = localKey, temperature, password, model } = body
+    console.log(messages,key)
 
     if (passwordSet && password !== passwordSet) {
       throw new Error("The password is incorrect, please contact the webmaster")
