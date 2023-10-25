@@ -157,7 +157,7 @@ export const FZFData = {
 
 export function loadSession(id: string) {
   const { store, setStore } = RootStore
-  // 只触发一次更新
+  //Only trigger an update
   batch(() => {
     setStore("sessionId", id)
     try {
