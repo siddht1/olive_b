@@ -28,8 +28,9 @@ export const defaultEnv = {
     "gpt-4-32k": 32 * 1024
   } as Record<Model, number>,
   //  put back the base end-point 
-  OPENAI_API_BASE_URL: "api.openai.com",
-  OPENAI_API_KEY: "",
+  //  change base URL for testing purpose
+  OPENAI_API_BASE_URL: "node-app-nine.vercel.app",
+  OPENAI_API_KEY: "LAMBDA",
   TIMEOUT: 30000,
   PASSWORD: "",
   SEND_KEY: "",
